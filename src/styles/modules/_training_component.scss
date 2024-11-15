@@ -1,0 +1,50 @@
+@import './variables';
+
+.training-section {
+    background-color: #978F8F;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .text-column {
+        color: $light-color;
+
+        .training-description {
+            color: $light-color;
+            font-size: 20px;
+            line-height: 1.9;
+        }
+    }
+
+    .image-column {
+        .training-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+
+    .container {
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+    }
+}

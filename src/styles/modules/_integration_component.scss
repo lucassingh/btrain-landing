@@ -1,0 +1,51 @@
+.integration-component {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .text-column {
+        color: $dark-color;
+
+        .integration-description {
+            color: $dark-color;
+            font-size: 20px;
+            line-height: 1.9;
+        }
+    }
+
+    .image-column {
+        .integration-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+
+    .container {
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+        }
+    }
+}

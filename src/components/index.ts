@@ -1,0 +1,11 @@
+export { default as NavBar } from "./NavBarComponent";
+export { default as HomeComponent } from './HomeComponent';
+export { default as UniversityComponent } from './UniversityComponent';
+export { default as HeaderComponent } from './HeaderComponent';
+export { default as ApplicationComponent } from './ApplicationsComponent';
+export { default as StepsComponents } from './StepsComponents';
+export { default as ForWhoComponent } from './ForWhoComponent';
+export { default as TrainingComponent } from './TrainingComponent'
+export { default as IntegrationComponent } from './IntegrationComponent';
+export { default as ReviewsComponent } from './ReviewsComponent';
+export { default as FooterComponent } from  './FooterComponent';
