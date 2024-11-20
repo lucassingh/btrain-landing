@@ -1,5 +1,7 @@
+import React from 'react';
 import HeaderComponent from './HeaderComponent';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Fade, Zoom } from 'react-awesome-reveal';
 import img1 from '../assets/why1.png';
 import img2 from '../assets/why2.png';
 import img3 from '../assets/why3.png';
@@ -37,23 +39,29 @@ const cardData: CardInfo[] = [
 const ForWhoComponent = () => {
     return (
         <section id="who" className="who-section">
-            <HeaderComponent
-                text1="¿Por qué elegir"
-                text2="BTrAIn?"
-                color1="#662D91"
-                color2="#F96400"
-            />
+            {/* Título con Zoom */}
+            <Zoom duration={600}>
+                <HeaderComponent
+                    text1="¿Por qué elegir"
+                    text2="BTrAIn?"
+                    color1="#662D91"
+                    color2="#F96400"
+                />
+            </Zoom>
             <Container className="mt-4">
                 <Row className="justify-content-center">
                     {cardData.map((card, index) => (
                         <Col key={index} md={3} xs={12} className="mb-4">
-                            <Card className="who-card">
-                                <Card.Img variant="top" src={card.imageUrl} alt="Card Image" className="card-image" />
-                                <Card.Body>
-                                    <Card.Title className="card-title">{card.title}</Card.Title>
-                                    <Card.Text className="card-text">{card.text}</Card.Text>
-                                </Card.Body>
-                            </Card>
+                            {/* Animación Fade con dirección derecha a izquierda */}
+                            <Fade direction="right" delay={index * 300} duration={600}>
+                                <Card className="who-card">
+                                    <Card.Img variant="top" src={card.imageUrl} alt="Card Image" className="card-image" />
+                                    <Card.Body>
+                                        <Card.Title className="card-title">{card.title}</Card.Title>
+                                        <Card.Text className="card-text">{card.text}</Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Fade>
                         </Col>
                     ))}
                 </Row>

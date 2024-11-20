@@ -1,5 +1,7 @@
+import React from 'react';
 import HeaderComponent from './HeaderComponent';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Fade, Zoom } from 'react-awesome-reveal';
 import img1 from '../assets/step1.png';
 import img2 from '../assets/step2.png';
 import img3 from '../assets/step3.png';
@@ -41,20 +43,26 @@ const cardData: CardInfo[] = [
 const StepsComponents = () => {
     return (
         <section id='steps' className='step-section'>
-            <HeaderComponent text1='Crea y Publica' text2='Cursos en Tiempo Record' color1='#F96400' color2='#662D91' />
+            {/* Título con Zoom */}
+            <Zoom duration={600}>
+                <HeaderComponent text1='Crea y Publica' text2='Cursos en Tiempo Record' color1='#F96400' color2='#662D91' />
+            </Zoom>
             <Container className="mt-4">
                 <Row className="justify-content-center align-items-center h-100">
                     {cardData.map((card, index) => (
                         <Col key={index} md={4} xs={12} className="mb-4">
-                            <div className='mb-4 text-center'>
-                                <img src={card.imageUrl} alt="Step" className="card-image" />
-                            </div>
-                            <div className="step-card">
-                                <div className="card-body">
-                                    <h3 className="card-title">{card.title}</h3>
-                                    <p className="card-text">{card.text}</p>
+                            {/* Animación Fade con delay dinámico */}
+                            <Fade direction="up" delay={index * 500} duration={600}>
+                                <div className='mb-4 text-center'>
+                                    <img src={card.imageUrl} alt="Step" className="card-image" />
                                 </div>
-                            </div>
+                                <div className="step-card">
+                                    <div className="card-body">
+                                        <h3 className="card-title">{card.title}</h3>
+                                        <p className="card-text">{card.text}</p>
+                                    </div>
+                                </div>
+                            </Fade>
                         </Col>
                     ))}
                 </Row>
