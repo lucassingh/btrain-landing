@@ -25,12 +25,8 @@ const ReviewsComponent = () => {
 							Danos tu Valoración
 						</Button>
 					</Col>
-					<Container>
-						<SliderComponent animation="left" />
-						<SliderComponent animation="right" />
-						<SliderComponent animation="left" />
-					</Container>
-
+					<SliderComponent />
+					<SliderComponent reverseDirection={true} />
 				</Row>
 			</Container>
 		</section>

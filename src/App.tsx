@@ -1,4 +1,4 @@
-import { ApplicationComponent, FooterComponent, ForWhoComponent, HomeComponent, IntegrationComponent, NavBar, ReviewsComponent, StepsComponents, TrainingComponent, UniversityComponent } from './components';
+import { ApplicationComponent, FloatingButtons, FooterComponent, ForWhoComponent, HomeComponent, IntegrationComponent, NavBar, ReviewsComponent, StepsComponents, TrainingComponent, UniversityComponent } from './components';
 
 function App() {
 
@@ -6,7 +6,9 @@ function App() {
 		<>
 			<NavBar />
 			<HomeComponent />
-			<UniversityComponent />
+			<div id="university-section">
+                <UniversityComponent />
+            </div>
 			<ApplicationComponent />
 			<StepsComponents />
 			<ForWhoComponent />
@@ -14,6 +16,7 @@ function App() {
 			<IntegrationComponent />
 			<ReviewsComponent />
 			<FooterComponent />
+			<FloatingButtons />
 		</>
 	)
 }

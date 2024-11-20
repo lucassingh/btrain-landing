@@ -1,6 +1,6 @@
 .integration-component {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 6%;
+    padding-bottom: 6%;
     height: auto;
     display: flex;
     align-items: center;
@@ -17,16 +17,33 @@
 
         .integration-description {
             color: $dark-color;
-            font-size: 20px;
-            line-height: 1.9;
+            font-size: 15px;
+            line-height: 2.5;
         }
     }
 
     .image-column {
-        .integration-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .video-wrapper {
+            position: relative;
             width: 100%;
-            height: auto;
-            border-radius: 10px;
+            height: 100%;
+            max-width: 100%;
+            overflow: hidden;
+
+            .integration-video {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+        .brand-slider {
+            width: 90%;
         }
     }
 

@@ -11,8 +11,18 @@
 @import './modules/integration_component';
 @import './modules/reviews_component';
 @import './modules/footer_component';
+@import './modules/floatingbuttons_component';
+@import './modules/sliderbrand_component';
 
 * {
     margin: 0;
     padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.slick-slider {
+    height: 200px;
 }

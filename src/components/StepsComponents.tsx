@@ -1,4 +1,3 @@
-import React from 'react';
 import HeaderComponent from './HeaderComponent';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Fade, Zoom } from 'react-awesome-reveal';

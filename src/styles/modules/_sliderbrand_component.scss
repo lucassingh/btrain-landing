@@ -1,0 +1,30 @@
+.brand-slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+
+    .slider-track {
+        display: flex;
+        gap: 20px;
+        animation: scroll 20s linear infinite;
+        width: calc(200%);
+    }
+
+    .slider-item {
+        flex: 0 0 auto;
+        img {
+            width: 200px;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

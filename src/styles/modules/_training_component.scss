@@ -2,8 +2,8 @@
 
 .training-section {
     background-color: #978F8F;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 6%;
+    padding-bottom: 6%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -20,16 +20,29 @@
 
         .training-description {
             color: $light-color;
-            font-size: 20px;
-            line-height: 1.9;
+            font-size: 16px;
+            line-height: 2.5;
         }
     }
 
-    .image-column {
-        .training-image {
+    .video-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .video-wrapper {
+            position: relative;
             width: 100%;
-            height: auto;
-            border-radius: 10px;
+            height: 100%;
+            max-width: 100%;
+            overflow: hidden;
+
+            .training-video {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                object-fit: cover; 
+            }
         }
     }
 

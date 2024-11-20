@@ -1,49 +1,60 @@
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import { FaPhoneAlt, FaEnvelope, FaUser, FaShareAlt } from 'react-icons/fa';
 import logo from '../assets/logo-r.png';
 
 const FooterComponent = () => {
     return (
-        <section className="footer-component">
-            <Container className="d-flex flex-column h-100">
-                <div className="footer-content flex-grow-1 d-flex flex-column justify-content-center align-items-center">
-                    <Row className="justify-content-center align-items-center text-center mb-5">
-                        <Col xs={12} className="d-flex align-items-center justify-content-center">
+        <>
+            <section className="footer-component">
+                <Container>
+                    <Row className="align-items-center h-100">
+                        <Col xs={12} md={6} className="footer-left text-center text-md-start">
                             <img src={logo} alt="Logo" className="footer-logo" />
-                            <div className="footer-divider mx-4"></div>
-                            <span className="footer-title">Capacitaciones para empresas</span>
-                        </Col>
-                    </Row>
-                    <Row className="justify-content-center text-center mb-5">
-                        <Col xs={12}>
-                            <p className="footer-bold-text">
-                                Regístrate ahora y obtén tu capacitación lista en 7 días.
+                            <p className="footer-description mt-3">
+                                Generamos Capacitación a la Medida de tu Empresa en 7 Días
                             </p>
+                            <a href="#" className="footer-newsletter d-flex align-items-center mt-3">
+                                <FaShareAlt className="me-2" /> Suscríbete a nuestro newsletter
+                            </a>
+                        </Col>
+                        <Col xs={12} md={3} className="footer-right footer-section">
+                            <h5>MAPA DEL SITIO</h5>
+                            <ul className="footer-links">
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Servicios</a></li>
+                                <li><a href="#">Capacitaciones</a></li>
+                                <li><a href="#">Nosotros</a></li>
+                            </ul>
+                        </Col>
+
+                        <Col xs={12} md={3} className="footer-right footer-section">
+                            <h5>CONTACTANOS</h5>
+                            <ul className="footer-contact">
+                                <li>
+                                    <FaUser className="icon" />
+                                    <a href="#">Bizit Global S.A.</a>
+                                </li>
+                                <li>
+                                    <FaPhoneAlt className="icon" />
+                                    <a href="tel:+5401123456789">+54 011 2345-6789</a>
+                                </li>
+                                <li>
+                                    <FaEnvelope className="icon" />
+                                    <a href="mailto:info@btrai.tech">info@btrai.tech</a>
+                                </li>
+                            </ul>
                         </Col>
                     </Row>
-                    <Row className="justify-content-center text-center mb-5">
-                        <Col xs={12} md={8}>
-                            <Form className="footer-form d-flex justify-content-center">
-                                <Form.Control
-                                    type="email"
-                                    placeholder="Tu Email"
-                                    className="footer-input me-3"
-                                />
-                                <Button variant="primary" className="custom-button">
-                                    Suscríbete
-                                </Button>
-                            </Form>
-                        </Col>
-                    </Row>
-                </div>
-                <Row className="justify-content-center text-center">
-                    <Col xs={12}>
-                        <p className="footer-copyright">
-                            © Copy Right 2024 BizitGlobal
-                        </p>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
+                </Container>
+            </section>
+            <section className="footer-subfooter">
+                <Container>
+                    <p className="subfooter-text">
+                        © Copy Right 2024 <a href="#">BizitGlobal</a>
+                    </p>
+                </Container>
+            </section>
+        </>
     );
 };
 

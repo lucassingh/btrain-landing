@@ -9,3 +9,5 @@ export { default as TrainingComponent } from './TrainingComponent'
 export { default as IntegrationComponent } from './IntegrationComponent';
 export { default as ReviewsComponent } from './ReviewsComponent';
 export { default as FooterComponent } from  './FooterComponent';
+export { default as FloatingButtons } from './FloatingButtons';
+export { default as BrandSlider } from './BrandSlider';

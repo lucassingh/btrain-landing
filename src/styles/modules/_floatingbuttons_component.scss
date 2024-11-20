@@ -1,0 +1,50 @@
+@import './variables';
+
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 30px;
+
+    .floating-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Arial', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        &.demo-button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 35px;
+            background-color: $primary-color;
+            color: #ffffff;
+
+            &:hover {
+                background-color: $secondary-color;
+            }
+        }
+
+        &.up-button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background-color: $secondary-color;
+            color: #ffffff;
+
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+    }
+}

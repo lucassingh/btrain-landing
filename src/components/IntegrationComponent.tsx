@@ -1,8 +1,8 @@
-import React from 'react';
 import HeaderComponent from './HeaderComponent';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Fade } from 'react-awesome-reveal';
-import integrationImage from '../assets/img-3.png';
+import integrationVideo from '../assets/videos/video_3.mp4';
+import BrandSlider from './BrandSlider';
 
 const IntegrationComponent = () => {
     return (
@@ -11,8 +11,13 @@ const IntegrationComponent = () => {
                 <Row className="h-100 align-items-center">
                     <Col md={6} xs={12} className="image-column">
                         <Fade direction="left" duration={800}>
-                            <img src={integrationImage} alt="Integration Illustration" className="integration-image" />
+                            <div className="video-wrapper">
+                                <video autoPlay loop muted className="integration-video">
+                                    <source src={integrationVideo} type="video/mp4" />
+                                </video>
+                            </div>
                         </Fade>
+                        <BrandSlider />
                     </Col>
                     <Col md={6} xs={12} className="text-column">
                         <Fade direction="right" duration={800}>

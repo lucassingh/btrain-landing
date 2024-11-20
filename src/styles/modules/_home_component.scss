@@ -62,14 +62,20 @@
     }
 
     .image-col {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        position: relative;
 
-        img {
-            width: 100%;
-            height: auto;
-            max-width: 700px;
+        .background-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-30%, -40%);
+            z-index: 1;
+            opacity: 0.5;
+        }
+
+        .video-content {
+            position: relative;
+            z-index: 2;
         }
     }
 
