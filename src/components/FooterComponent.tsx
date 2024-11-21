@@ -1,5 +1,5 @@
 import { Container, Row, Col, Nav } from 'react-bootstrap';
-import { FaPhoneAlt, FaEnvelope, FaUser, FaShareAlt } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaUser } from 'react-icons/fa';
 import logo from '../assets/logo-r.png';
 
 const FooterComponent = () => {
@@ -13,9 +13,6 @@ const FooterComponent = () => {
                             <p className="footer-description mt-3">
                                 Generamos Capacitación a la Medida <br /> de tu Empresa en 7 Días
                             </p>
-                            {/*<a href="#" className="footer-newsletter d-flex align-items-center mt-3">
-                                <FaShareAlt className="me-2" /> Suscríbete a nuestro newsletter
-                            </a>*/}
                         </Col>
                         <Col xs={12} md={3} className="footer-right footer-section">
                             <h5>MAPA DEL SITIO</h5>

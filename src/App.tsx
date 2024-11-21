@@ -1,4 +1,4 @@
-import { ApplicationComponent, FloatingButtons, FooterComponent, ForWhoComponent, HomeComponent, IntegrationComponent, NavBar, ReviewsComponent, StepsComponents, TrainingComponent, UniversityComponent } from './components';
+import { ApplicationComponent, FloatingButtons, FooterComponent, ForWhoComponent, HomeComponent, IntegrationComponent, NavBar, StepsComponents, TrainingComponent, UniversityComponent } from './components';
 
 function App() {
 
