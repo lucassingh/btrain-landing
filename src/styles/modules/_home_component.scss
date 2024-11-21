@@ -63,12 +63,11 @@
 
     .image-col {
         position: relative;
-
         .background-image {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-30%, -40%);
+            transform: translate(-35%, -55%);
             z-index: 1;
             opacity: 0.5;
         }

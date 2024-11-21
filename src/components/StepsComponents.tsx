@@ -42,7 +42,6 @@ const cardData: CardInfo[] = [
 const StepsComponents = () => {
     return (
         <section id='steps' className='step-section'>
-            {/* Título con Zoom */}
             <Zoom duration={600}>
                 <HeaderComponent text1='Crea y Publica' text2='Cursos en Tiempo Record' color1='#F96400' color2='#662D91' />
             </Zoom>

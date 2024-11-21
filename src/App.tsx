@@ -14,7 +14,7 @@ function App() {
 			<ForWhoComponent />
 			<TrainingComponent />
 			<IntegrationComponent />
-			<ReviewsComponent />
+			{/*<ReviewsComponent />*/}
 			<FooterComponent />
 			<FloatingButtons />
 		</>

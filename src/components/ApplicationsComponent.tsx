@@ -5,7 +5,6 @@ import HeaderComponent from './HeaderComponent';
 const ApplicationsComponent = () => {
     return (
         <section id="applications" className="app-section">
-            {/* Animación del Header */}
             <Zoom duration={1000}>
                 <HeaderComponent
                     text1="Aplicaciones Prácticas"

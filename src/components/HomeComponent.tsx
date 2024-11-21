@@ -6,10 +6,15 @@ import imgBg from '../assets/background-1.png';
 import imgBg2 from '../assets/bg-video.png';
 
 const HomeComponent = () => {
+
+    const handleDemoClick = () => {
+        window.open('https://calendly.com/lucas-singh-bizitglobal/30min', '_blank');
+    };
+
     return (
         <div
+            id="home"
             className="home-component"
-            //style={{backgroundColor:'#fff'}}
             style={{ backgroundImage: `url(${imgBg})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}
         >
             <Container className="h-100">
@@ -21,15 +26,9 @@ const HomeComponent = () => {
                             </h1>
                         </Fade>
 
-                        <Fade direction="left" delay={200} duration={600}>
-                            <p className="subtitle">
-                                Generamos Capacitación a la Medida de <br />tu Empresa en 7 Días
-                            </p>
-                        </Fade>
-
                         <Fade direction="left" delay={400} duration={600}>
                             <div>
-                                <Button className="demo-button mb-3">SOLICITAR TU DEMO GRATIS</Button>
+                                <Button className="demo-button mb-3" onClick={handleDemoClick}>SOLICITAR TU DEMO GRATIS</Button>
                                 <div className="video-button">
                                     <Button variant="outline-light" className="play-button">
                                         <IoPlay className="me-2" /> Ver como Funciona
@@ -54,7 +53,7 @@ const HomeComponent = () => {
                                 className="video-content"
                                 style={{
                                     borderRadius: '25px',
-                                    width: '300px',
+                                    width: '650px',
                                     height: 'auto',
                                 }}
                             />
