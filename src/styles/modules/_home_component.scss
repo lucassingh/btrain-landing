@@ -69,6 +69,11 @@
                     background-color: $light-color;
                     color: $secondary-color;
                 }
+
+                &:active {
+                    background-color: $light-color;
+                    color: $secondary-color;
+                }
             }
         }
     }
