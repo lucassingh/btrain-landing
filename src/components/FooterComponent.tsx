@@ -10,9 +10,6 @@ const FooterComponent = () => {
                     <Row className="align-items-center h-100">
                         <Col xs={12} md={6} className="footer-left text-center text-md-start">
                             <img src={logo} alt="Logo" className="footer-logo" />
-                            <p className="footer-description mt-3">
-                                Generamos Capacitación a la Medida <br /> de tu Empresa en 7 Días
-                            </p>
                         </Col>
                         <Col xs={12} md={3} className="footer-right footer-section">
                             <h5>MAPA DEL SITIO</h5>

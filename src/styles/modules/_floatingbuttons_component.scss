@@ -27,6 +27,7 @@
             border: none;
             border-radius: 35px;
             background-color: $primary-color;
+            animation: pulse 2s infinite ease-in-out;
             color: #ffffff;
 
             &:hover {
@@ -46,5 +47,14 @@
                 background-color: $primary-color;
             }
         }
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
     }
 }

@@ -8,7 +8,7 @@ import imgBg2 from '../assets/bg-video.png';
 const HomeComponent = () => {
 
     const handleDemoClick = () => {
-        window.open('https://calendly.com/lucas-singh-bizitglobal/30min', '_blank');
+        window.open('https://calendar.app.google/5H2kMJxjeDz64Ee48', '_blank');
     };
 
     return (
@@ -22,7 +22,7 @@ const HomeComponent = () => {
                     <Col lg={6} className="text-col text-center text-lg-start">
                         <Fade direction="left" duration={600}>
                             <h1>
-                                Capacita a tu <br /> Equipo en Días, <br /> No Semanas
+                                <span className="highlight">Capacita</span> <br /> a tu Equipo en <br /> Días, No Semanas
                             </h1>
                         </Fade>
 

@@ -18,6 +18,18 @@
             @media (min-width: 768px) {
                 font-size: 4rem;
             }
+
+            span.highlight {
+                position: relative;
+                display: inline-block;
+                background: linear-gradient(90deg, $primary-color, $secondary-color, $primary-color);
+                background-size: 200%;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                animation: slide-bg 3s linear infinite;
+                font-weight: bold;
+            }
         }
 
         .subtitle {
@@ -82,5 +94,14 @@
         .image-col {
             display: none;
         }
+    }
+}
+
+@keyframes slide-bg {
+    0% {
+        background-position: -200%;
+    }
+    100% {
+        background-position: 200%;
     }
 }

@@ -29,7 +29,7 @@ const FloatingButtons = () => {
     };
 
     const handleDemoClick = () => {
-        window.open('https://calendly.com/lucas-singh-bizitglobal/30min', '_blank');
+        window.open('https://calendar.app.google/5H2kMJxjeDz64Ee48', '_blank');
     };
 
     return (
