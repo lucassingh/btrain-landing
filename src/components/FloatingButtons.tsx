@@ -2,15 +2,14 @@ import { useEffect, useState } from 'react';
 import { FaChevronUp } from "react-icons/fa";
 
 const FloatingButtons = () => {
-
     const [showScrollButton, setShowScrollButton] = useState(false);
-    
     const [showDemoButton, setShowDemoButton] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
             setShowScrollButton(scrollY > 300);
+
             const universitySection = document.getElementById('university-section');
             if (universitySection) {
                 const rect = universitySection.getBoundingClientRect();

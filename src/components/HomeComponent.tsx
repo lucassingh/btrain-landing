@@ -36,11 +36,11 @@ const HomeComponent = () => {
                             <Fade direction="left" delay={400} duration={600}>
                                 <div>
                                     <Button className="demo-button mb-3" onClick={handleDemoClick}>
-                                        SOLICITAR TU DEMO GRATIS
+                                        SOLICITA TU DEMO GRATIS
                                     </Button>
                                     <div className="video-button">
                                         <Button variant="outline-light" className="play-button" onClick={handleDemoClick}>
-                                            <IoPlay className="me-2" /> Ver como Funciona
+                                            <IoPlay className="me-2" /> Ver cómo Funciona
                                         </Button>
                                     </div>
                                 </div>

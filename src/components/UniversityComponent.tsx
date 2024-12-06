@@ -35,25 +35,25 @@ const UniversityComponent = () => {
                             <Fade cascade direction="left" damping={0.2} duration={1200}>
                                 <Card
                                     title="Empresas que optimizan procesos"
-                                    text="Capacita a tu equipo en temas específicos de forma rápida y eficiente con soluciones automatizadas y alineadas a tus KPIs clave. Obtén un retorno directo en cada dólar invertido en capacitación, mejorando tiempos productivos y aumentando la rentabilidad."
+                                    text="Capacite a su equipo en temas específicos de forma rápida y eficiente con soluciones automatizadas y alineadas a sus KPIs clave. Obtén un retorno directo en cada dólar invertido en capacitación, mejorando tiempos productivos y aumentando la rentabilidad."
                                     backgroundColor="#662D91"
                                     widthPercentage="65%"
                                 />
                                 <Card
                                     title="Organizaciones que prefieren lo práctico"
-                                    text="Accede a cursos listos para usar, sin la necesidad de crear contenido propio. BTrAnI ofrece un servicio superior sin costo extra, brindándote una experiencia integral de formación que no solo educa, sino que impulsa el cumplimiento de tus objetivos de negocio."
+                                    text="Accede a cursos listos para usar, sin la necesidad de crear contenido propio. BTrAnI ofrece un servicio superior sin costo extra, brindándote una experiencia integral de formación que no solo educa, sino que impulsa el cumplimiento de sus objetivos de negocio."
                                     backgroundColor="#C52126"
                                     widthPercentage="75%"
                                 />
                                 <Card
                                     title="Organizaciones que prefieren lo práctico"
-                                    text="Diseñamos formación breve y evaluaciones constantes para asegurar resultados inmediatos. La capacitación está directamente alineada a tus KPIs, lo que transforma el aprendizaje en una inversión estratégica que impacta en áreas clave, como aumento de ventas y optimización de procesos."
+                                    text="Diseñamos formación breve y evaluaciones constantes para asegurar resultados inmediatos. La capacitación está directamente alineada a sus KPIs, lo que transforma el aprendizaje en una inversión estratégica que impacta en áreas clave, como aumento de ventas y optimización de procesos."
                                     backgroundColor="#D30F78"
                                     widthPercentage="85%"
                                 />
                                 <Card
-                                    title="¿Cuáles son tus KPIs?"
-                                    text="BTrAIn garantiza que la capacitación influya directamente en ellos, asegurando que cada sesión contribuya a mejorar los resultados que realmente importan para tu empresa."
+                                    title="¿Cuáles son sus KPIs?"
+                                    text="BTrAIn garantiza que la capacitación influya directamente en ellos, asegurando que cada sesión contribuya a mejorar los resultados que realmente importan para su empresa."
                                     backgroundColor="#F96400"
                                     widthPercentage="100%"
                                 />

@@ -14,10 +14,10 @@ interface CardInfo {
 const cardData: CardInfo[] = [
     {
         title: "Subir\nDocumentos",
-        text: `Carga documentos o manuales en segundos. 
-                Personaliza con los colores y la imagen de tu 
+        text: `Cargue documentos o manuales en segundos. 
+                Personalize con los colores y la imagen de su
                 marca para mantener la identidad visual de 
-                tu empresa.`,
+                su empresa.`,
         imageUrl: img1
     },
     {
@@ -30,9 +30,9 @@ const cardData: CardInfo[] = [
         imageUrl: img2
     },
     {
-        title: "Publica y capacita sin\nComplicaciones",
+        title: "Publique y capacite sin\nComplicaciones",
         text: `Publique sus cursos directamente en su LMS
-               o utiliza nuestra plataforma intuitiva para 
+               o utilice nuestra plataforma intuitiva para 
                comenzar a capacitar a su equipo en cuestión 
                de días, sin contratiempos.`,
         imageUrl: img3

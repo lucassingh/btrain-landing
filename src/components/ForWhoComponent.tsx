@@ -14,8 +14,8 @@ interface CardInfo {
 
 const cardData: CardInfo[] = [
     {
-        title: "Flexibilidad Total a Tu Medida",
-        text: "La IA te ayuda a diseñar el curso completamente personalizado y elige entre contenido predefinido listo para usar.",
+        title: "Flexibilidad Total a Su Medida",
+        text: "La IA le ayuda a diseñar el curso completamente personalizado y elige entre contenido predefinido listo para usar.",
         imageUrl: img1,
     },
     {
