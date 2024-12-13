@@ -10,7 +10,7 @@ const HomeComponent = () => {
     const [showModal, setShowModal] = useState(false);
 
     const handleDemoClick = () => {
-        setShowModal(true);
+        window.open('https://calendar.app.google/5H2kMJxjeDz64Ee48', '_blank');
     };
 
     const handleCloseModal = () => {
